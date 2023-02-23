@@ -5,9 +5,9 @@
 \bugfix{subsystem,id,description[,Status]}
 ```
 ### Feature Updates
+----------|---|-------------|--------
+Subsystem | Id | Description | Status
 ----------:----:-------------:--------
-Subsystem : Id : Description : Status
-----------:----:-------------:--------
-Compiler : 22 : Handle commens : Complete
-Codegen : 33 : Optimization level : Partial
-Codegen : 34 : Intrinsics : Complete
+Compiler | 22 | Handle commens | Complete
+Codegen | 33 | Optimization level | Partial
+Codegen | 34 | Intrinsics | Complete
