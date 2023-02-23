@@ -1,4 +1,7 @@
 # gitrn - Release notes generator from git commit messages
+
+git log messages are analyzed to extract markup lines in the syntax outlined. The output is one .md file that is convertible into a pdf file using a tool such as **pandoc**.
+
 ## Markup
 ```
 \feature{subsystem,id,description[,Status]}
