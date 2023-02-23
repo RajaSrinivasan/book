@@ -1,0 +1,16 @@
+\lstset{language=Ada, caption=impl.adb: Processing the input file}
+\begin{tcolorbox}[width=\linewidth, sharp corners=all, colback=white!95!black]
+\begin{lstlisting}[frame=single, numbers=left, numbersep=5pt, firstnumber= 129]
+        Open(inp,In_File,inputfilename);
+        while not End_Of_File(inp)
+        loop
+            Get_Line(inp,inpline,inplinelen);
+            lineno := lineno + 1;
+            if Index(inpline(1..inplinelen) , cmdid) > 1
+            then
+                Extract_Segment;
+            end if;
+        end loop;
+        Close(inp);
+\end{lstlisting}
+\end{tcolorbox}

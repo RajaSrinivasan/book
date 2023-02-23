@@ -1,0 +1,17 @@
+\lstset{language=Ada, caption=impl.adb: Begin recognition of the segment}
+\begin{tcolorbox}[width=\linewidth, sharp corners=all, colback=white!95!black]
+\begin{lstlisting}[frame=single, numbers=left, numbersep=5pt, firstnumber= 44]
+            Match(beginpat,line,segspec);
+            if segspec(0) = No_Match
+            then
+                Put_Line(line);
+                Put_Line("begin pattern not found");
+                return;
+            end if;
+            Put("Segment "); 
+            Put(line(segspec(1).first..segspec(1).last));
+            Put(" Caption "); 
+            Put(line(segspec(2).first..segspec(2).last));
+            New_Line;
+\end{lstlisting}
+\end{tcolorbox}

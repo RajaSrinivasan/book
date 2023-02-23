@@ -1,0 +1,15 @@
+\lstset{language=Ada, caption=impl.adb: Handling segments to be skipped}
+\begin{tcolorbox}[width=\linewidth, sharp corners=all, colback=white!95!black]
+\begin{lstlisting}[frame=single, numbers=left, numbersep=5pt, firstnumber= 79]
+                if skipping
+                then
+                    if Match(skipendpat,inpline(1..inplinelen))
+                    then
+                        skipping := false;
+                        Emit_Line(". . .");
+                    end if;
+                elsif Match(skippat,inpline(1..inplinelen))
+                then
+                    skipping := true;
+\end{lstlisting}
+\end{tcolorbox}
