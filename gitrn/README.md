@@ -4,9 +4,9 @@ git log messages are analyzed to extract markup lines in the syntax outlined. Th
 
 ## Markup
 ```
-\feature{subsystem,id,description[,Status]}
-\bugfix{subsystem,id,description[,Status]}
-\knownissue{subsystem,id,description[,Status]}
+\feature{subsystem,reqid,internalid,description[,Status]}
+\bugfix{subsystem,reqid,internalid,description[,Status]}
+\knownissue{subsystem,reqid,internalid,description[,Status]}
 ```
 ### Feature Updates
 
