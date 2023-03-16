@@ -1,7 +1,10 @@
+-- codemd: begin segment=env caption=Environment
 with Text_IO; use Text_IO;
+with GNAT.Command_Line;
 with Hex.dump.file;
-
 with dump_cli;
+-- codemd: end
+
 procedure dump is
 begin
    dump_cli.ProcessCommandLine;
@@ -19,4 +22,6 @@ begin
          Hex.dump.file.Dump (arg);
       end;
    end loop;
+exception
+   when GNAT.COMMAND_LINE.EXIT_FROM_COMMAND_LINE => return;
 end dump;

@@ -55,6 +55,7 @@ package body Hex is
       return System.Storage_Elements.Storage_Element (u8);
    end Value;
 
+-- codemd: begin segment=heximpl caption=Implementation of some functions
    function Value
      (Hex : Hexstring) return System.Storage_Elements.Storage_Element
    is
@@ -75,6 +76,7 @@ package body Hex is
       img (2) := Nibble_Hex (Integer (Lnibble) + 1);
       return img;
    end Image;
+-- codemd: end
 
    function Image (bin : Interfaces.Unsigned_16) return String is
       use Interfaces;

@@ -15,6 +15,7 @@ package body dump_cli is
       New_Line;
    end SwitchHandler;
 
+-- codemd: begin segment=cmdline caption=Command Line Processing
    procedure ProcessCommandLine is
       Config : GNAT.Command_Line.Command_Line_Configuration;
    begin
@@ -35,6 +36,7 @@ package body dump_cli is
       Put_Line ("Output Name " & outputname.all);
       Put_Line ("Verbosity " & Boolean'Image (verbose));
    end ProcessCommandLine;
+-- codemd: end
 
    function GetNextArgument return String is
    begin
