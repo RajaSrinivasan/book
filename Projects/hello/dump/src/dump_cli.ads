@@ -1,7 +1,6 @@
 with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 with GNAT.Strings;
 
-
 -- codemd: begin segment=cli caption=Specification
 package dump_cli is
    verbose : aliased Boolean :=

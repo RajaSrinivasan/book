@@ -54,8 +54,8 @@ package body Hex.dump is
             Lengthtodump := Lengthleft;
          end if;
 
-         Set_Col (Outfile, Count (piccol));
-         Put ("* ");
+         -- Set_Col (Outfile, Count (piccol));
+         Put (" * ");
          for b in 1 .. Lengthtodump loop
             Put (CharImage (bigBlock (Blockstart + b - 1)));
          end loop;

@@ -19,7 +19,7 @@ begin
             Text_IO.Put ("* Dumping ***************************************");
             Text_IO.Put_Line (arg);
          end if;
-         Hex.dump.file.Dump (arg);
+         Hex.dump.file.Dump (arg, Blocklen => 16);
       end;
    end loop;
 exception

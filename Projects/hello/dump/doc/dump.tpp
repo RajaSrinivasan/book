@@ -23,3 +23,4 @@ The utility developed will provide a hexadecimal dump of a file.
 #include "../../adalib/src/hex-heximpl.tex"
 
 \section{Usage Examples}
+#shell "../../bin/dump ../src/dump.adb"
