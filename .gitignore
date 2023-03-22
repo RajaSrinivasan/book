@@ -64,6 +64,8 @@ acs-*.bib
 # changes
 *.soc
 
+*.tpp.tex
+
 # comment
 *.cut
 
