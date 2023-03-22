@@ -2,7 +2,5 @@ all:
 	cp ../prolog.tex main.tex
 	cat ../../Projects/hello/hello.tex >>main.tex
 	cat ../epilog.tex >>main.tex
-	cp ../../Projects/hello/lister/doc/lister.tpp.tex .
-	cp ../../Projects/hello/basicdtypes/doc/basicdtypes.tpp.tex .
-	cp ../../Projects/hello/dump/doc/dump.tpp.tex .
+	find ../../Projects -name "*.tpp.tex" -exec cp {} . \;
 	pdflatex main.tex

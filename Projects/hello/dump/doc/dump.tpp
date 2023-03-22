@@ -21,7 +21,6 @@ The utility developed will provide a hexadecimal dump of a file.
 
 \subsubsection{Hexadecimal conversions}
 #include "../../adalib/src/hex-heximpl.tex"
-
 \begin{landscape}
 \subsection{Usage Examples}
 #shell "../../bin/dump ../src/dump.adb"
